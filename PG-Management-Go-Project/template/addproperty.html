@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Add Property</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header>
+		<h1>Add Property</h1>
+	</header>
+	<main>
+		<section class="add-form">
+			<h2>Property Information</h2>
+			<form action="/addproperty" method="post">
+				<label for="title">Property_Name</label>
+				<input type="text" name="title" required>
+				<label for="contact_no">Contact_No</label>
+				<input type="text" name="contact_no" required>
+				<label for="property_type">Property_Type</label>
+				<input type="text" name="property_type" required>
+				<label for="property_address">Property_Address</label>
+				<input type="text" name="Property_Address" required>
+				<label for="city">City</label>
+				<input type="text" name="city" required>
+				<label for="pin_code">Pin_Code</label>
+				<input type="text" name="pin_code" required>
+				<label for="landmark">LandMark</label>
+                <input type="text" name="landmark" required>
+                <label for="ammeneties">Ammeneties</label>
+                <input type="text" name="ammeneties" required>
+                <label for="price_month">Price_Month</label>
+                <input type="number" name="price_month" required>
+                <label for="price_day">Price_Day</label>
+                <input type="number" name="price_day" required>
+                <label for="advance_deposit_month">Advance_Deposit_Month</label>
+                <input type="number" name="advance_deposit_month" required>
+                <label for="advance_deposit_day">Advance_Deposit_Day</label>
+                <input type="number" name="advance_deposit_month" required>
+				<input type="submit" value="Add Property">
+			</form>
+		</section>
+	</main>
+</body>
+</html>
+
+
+<style>
+    body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+	background-color: #f2f2f2;
+}
+
+header {
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+}
+
+h1 {
+	margin: 0;
+}
+
+main {
+	width: 80%;
+	margin: 0 auto;
+	padding: 20px;
+	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: 0px 0px 10px #888888;
+}
+
+.add-form {
+	background-color: #f2f2f2;
+	padding: 20px;
+	border-radius: 5px;
+	box-shadow: 0px 0px 5px #888888;
+}
+
+h2 {
+	margin-top: 0;
+}
+
+label {
+	display: block;
+	margin-bottom: 5px;
+}
+
+input[type="text"], textarea {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 20px;
+	border-radius: 5px;
+	border: none;
+}
+
+input[type="submit"] {
+	background-color: #4CAF50;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	padding: 10px;
+	cursor: pointer;
+}
+
+input[type="submit"]:hover {
+	background-color: #3e8e41;
+}
+
+</style>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Signup</title>
+	<!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+</head>
+<body>
+	<div class="signup-box">
+		<h1>Signup</h1>
+		<form  action="/signup" method="post">
+			<label for="first_name">First_Name</label>
+			<input type="text" id="first_name" name="first_name" required>
+			<label for="last_name">Last_Name</label>
+			<input type="text" id="last_name" name="last_name" required>
+            <label for="email">Email</label>
+			<input type="text" id="email" name="email" required>
+            <label for="password">Password</label>
+			<input type="text" id="password" name="password" required>
+            <label for="phone">Phone</label>
+			<input type="text" id="phone" name="phone" required>
+            <label for="user_type">User_Type</label>
+			<input type="text" id="user_type" name="user_type" required>
+			<input type="submit" value="Submit">
+		</form>
+	</div>
+</body>
+</html>
+
+
+<style>
+    body {
+	font-family: Arial, sans-serif;
+	background-color: #f2f2f2;
+}
+
+.signup-box {
+	max-width: 400px;
+	margin: 50px auto;
+	padding: 20px;
+	background-color: #fff;
+	border-radius: 5px;
+	box-shadow: 0px 0px 10px #999;
+}
+
+h1 {
+	text-align: center;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+}
+
+label {
+	margin-top: 10px;
+	margin-bottom: 5px;
+	font-weight: bold;
+}
+
+input[type="text"], input[type="password"] {
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+}
+
+input[type="submit"] {
+	padding: 10px;
+	margin-top: 20px;
+	background-color: #4CAF50;
+	color: #fff;
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
+}
+
+input[type="submit"]:hover {
+	background-color: #3e8e41;
+}
+
+</style>
+
+
+
+
+
